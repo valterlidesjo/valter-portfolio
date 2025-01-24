@@ -17,10 +17,10 @@ const ProjectsPage = () => {
           <p>
             been working on projects since may 2024 so i'm a pretty fresh face
             in webdev but been grinding hard since then. always been drawn
-            towards coding and tought the idea of turning ideas into a real
+            towards coding and tought the idea of turning vision into a real
             working website was fascinating. <br /> <br />
             started learning html, css and js with online code camps and
-            youtube. first small projects was a restaurant site, then css
+            youtube. first small project was a restaurant site, then css
             paintings, movie app with api etc. <br /> <br />
             started an education in webdev and got a better computer. learned
             php, mysql and db and made my first "bigger" project{" "}
@@ -62,17 +62,17 @@ const ProjectsPage = () => {
           </p>
         </div>
         <div className="projects">
-          <div className="projects-tt">
+          <div className="projects-tt" onClick={() => navigate("/projects/trankantraining")}>
             <div className="training-top-text training">Trånkan</div>
             <img src={trainingBild} alt="Trånkan Training" />
             <div className="training-bottom-text training">Training</div>
           </div>
-          <div className="projects-ss">
+          <div className="projects-ss" onClick={() => navigate("/projects/sillystocks")}>
             <div className="ss-top-text ss">SILLY</div>
             <img src={ssBild} alt="Silly Stocks" />
             <div className="ss-bottom-text ss">STOCKS</div>
           </div>
-          <div className="projects-sund">
+          <div className="projects-sund" onClick={() => navigate("/projects/sundnergarden")}>
             <div className="sund-top-text sund">Sund</div>
             <img src={sundBild} alt="Sund Nergården" />
             <div className="sund-bottom-text sund">Nergården</div>

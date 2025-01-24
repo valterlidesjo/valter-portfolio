@@ -14,7 +14,7 @@ const TrankanTraining = () => {
     -homepage with animation, videos, text, and pictures for motivation
     -sign up and login for training costumers
     -db with phpmyadmin and mysql code
-    -set profile picture, set current weight and height to track results
+    -set profile picture, current weight and height to track results
     -edit profile page
     -webshop with training items, shopping cart, contact etc
     -simulation for a purchase

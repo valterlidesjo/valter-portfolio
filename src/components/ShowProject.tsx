@@ -10,9 +10,10 @@ interface ShowProjectProps {
     aboutText: string;
     website?: string;
     url?: string;
+    padding?: string;
 }
 
-const ShowProject: React.FC <ShowProjectProps> = ({ header, desktop, mobile, fontFamily, fontWeight, fontSize, aboutText, website, url }) => {
+const ShowProject: React.FC <ShowProjectProps> = ({ header, desktop, mobile, fontFamily, fontWeight, fontSize, aboutText, website, url, padding }) => {
   return (
     <>
         <div className="show-projects-container">
@@ -20,8 +21,8 @@ const ShowProject: React.FC <ShowProjectProps> = ({ header, desktop, mobile, fon
                 {header}
             </div>
             <div className="show-devices-container">
-                <div className="show-mobile">
-                    <img src={mobile} alt="Mobile" />
+                <div className="show-mobile" >
+                    <img src={mobile} alt="Mobile" style={{ paddingBottom: padding }} />
                 </div>
                 <div className="show-desktop">
                     <img src={desktop} alt="Desktop" />

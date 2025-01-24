@@ -5,7 +5,7 @@ import sundDesk from "../assets/sundDesktop.png";
 const SundNergarden = () => {
   return (
     <>
-    <ShowProject mobile={sundMobile} desktop={sundDesk} header='Sund Nergården' fontFamily='"Satisfy"' fontSize='2.5rem' website='sund nergården' url='https://demosundnergarden.netlify.app/'
+    <ShowProject mobile={sundMobile} desktop={sundDesk} header='Sund Nergården' fontFamily='"Satisfy"' fontSize='2.5rem' padding='0.3rem' website='sund nergården' url='https://demosundnergarden.netlify.app/'
     aboutText='
     -website for luxurios getaway hotel and restaurant sund nergården
     -frontend website with react and scss
