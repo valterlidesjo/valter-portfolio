@@ -1,0 +1,263 @@
+@use "../../mainstyles/global" as g;
+@use "../../mainstyles/mixins" as m;
+@use "../../mainstyles/variabels" as v;
+
+@keyframes bounceAnimation {
+  0% {
+    top: -35vh;
+    left: 57%;
+  }
+  50% {
+    top: -24vh;
+    left: 62%;
+  }
+  100% {
+    top: -35vh;
+    left: 57%;
+  }
+}
+
+.homepage-start-top-container {
+  width: 100%;
+  height: 45svh;
+  @include m.flex(column, space-between, center);
+  background: v.$green;
+  .name-top {
+    width: 100%;
+    @include m.flex(row, flex-end, center);
+    z-index: 5;
+    p {
+      font-family: "Limelight", serif;
+      margin: 1rem 1rem 0 0;
+      font-size: 1.7rem;
+    }
+  }
+  .homepage-header {
+    width: 100%;
+    @include m.flex(column, center, flex-start);
+
+    p {
+      font-family: "K2D", serif;
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: left;
+      padding-left: 2rem;
+    }
+    .g-text-container {
+      width: 230px;
+      
+      .g-text {
+        padding-left: 2rem;
+        color: v.$grey;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+  }
+  .space-container {
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  .homepage-start-yellow {
+    display: none;
+  }
+  @include m.desk {
+    height: 65svh;
+
+    .homepage-header {
+      @include m.flex(column, center, flex-start);
+      padding-left: 10vw;
+    }
+    .homepage-start-yellow {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 65svh;
+      background: v.$yellow;
+    }
+  }
+}
+
+.boxes-container {
+  position: relative;
+  width: 100%;
+  height: 50svh;
+  .homepage-yellow {
+    width: 220px;
+    height: 290px;
+    background: v.$yellow;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .homepage-image-container {
+    position: absolute;
+    width: 220px;
+    height: 290px;
+    top: 23%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .homepage-white-box {
+    position: absolute;
+    border: 2px solid black;
+    width: 220px;
+    height: 290px;
+    z-index: 1;
+    top: 38%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+  @include m.desk {
+    .homepage-yellow {
+      display: none;
+    }
+    .homepage-image-container {
+      top: -35vh;
+      left: 57%;
+      width: 160px;
+      height: 210px;
+      transition: transform 0.3s ease;
+      border: 2px solid black;
+      &.animate {
+        animation: bounceAnimation 2s ease-in-out;
+      }
+    }
+    .homepage-white-box {
+      top: -24vh;
+      left: 62%;
+      width: 160px;
+      height: 210px;
+    }
+  }
+}
+
+.homepage-container {
+  @include m.flex(column);
+
+  .me-info-container {
+    background: v.$green;
+    padding: 2rem;
+    margin: 2rem;
+    max-width: 700px;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transition: 0.5s;
+    cursor: pointer;
+    
+    p {
+      font-family: "K2D", serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-align: left;
+      line-height: 1.6;
+    }
+  }
+  .me-info-container:hover{
+    scale: 1.02;
+    box-shadow:12px 12px 7px rgba(0,0,0,.7);
+    transition: 0.5s;
+  }
+  .languages-box {
+    padding: 1rem;
+    margin: 10rem 0;
+    @include m.flex(column);
+    max-width: 700px;
+    .row-1,
+    .row-2 {
+      @include m.flex(row, space-evenly, center);
+      width: 100%;
+    }
+    .icon {
+      font-size: 3rem;
+      margin: 1rem;
+    }
+    .icon-box{
+      position: relative;
+    }
+    .icon-box .react-tooltip,
+    .icon-box .ts-tooltip,
+    .icon-box .html-tooltip,
+    .icon-box .css-tooltip,
+    .icon-box .sass-tooltip,
+    .icon-box .node-tooltip,
+    .icon-box .mongo-tooltip,
+    .icon-box .express-tooltip,
+    .icon-box .php-tooltip,
+    .icon-box .sql-tooltip {
+      display: none;
+    }
+    .icon-box:hover .react-tooltip,
+    .icon-box:hover .ts-tooltip,
+    .icon-box:hover .html-tooltip,
+    .icon-box:hover .css-tooltip,
+    .icon-box:hover .sass-tooltip,
+    .icon-box:hover .node-tooltip,
+    .icon-box:hover .mongo-tooltip,
+    .icon-box:hover .express-tooltip,
+    .icon-box:hover .php-tooltip,
+    .icon-box:hover .sql-tooltip {
+      display: block;
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.2rem;
+    }
+  }
+  
+  .resume-button {
+    width: 100%;
+    @include m.flex(row);
+    margin: 4rem 0;
+    max-width: 700px;
+    
+    button {
+      border: 2px solid black;
+      font-family: "Modak", serif;
+      font-size: 2rem;
+      background: white;
+      padding: 1.5rem 2.5rem;
+      width: calc(100% - 4rem);
+      margin: 0 2rem;
+      cursor: pointer;
+    }
+    
+    @include m.desk {
+      button {
+        transition: 0.8s;
+      }
+      button:hover {
+        background: black;
+        color: white;
+        transition: 0.8s;
+      }
+    }
+  }
+  @include m.small{
+    .me-info-container{
+      p{
+        font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+      }
+    }
+    .languages-box {
+
+      .icon {
+        font-size: 2rem;
+        margin: 0.7rem;
+      }
+    }
+  }
+}

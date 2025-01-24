@@ -1,0 +1,111 @@
+@use "../../mainstyles/global" as g;
+@use "../../mainstyles/variabels" as v;
+@use "../../mainstyles/mixins" as m;
+
+.show-projects-container{
+    @include m.flex(column);
+    .show-projects-header{
+        padding: 3rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .show-devices-container{
+        width: 100%;
+        @include m.flex (column);
+        position: relative;
+        height: 66svh;
+        margin: 5svh 0;
+        .show-desktop{
+            position: absolute;
+            bottom: 0;
+            margin-right: 3%;
+
+            img{
+                height: 32svh;
+                max-width: 98%;
+            }
+        }
+        .show-mobile{
+            position: absolute;
+            top: 0;
+                img{
+                    height: 34svh;
+                    max-width: 95%;
+
+                }
+        }
+    }
+    .about-project{
+        padding: 4rem 2rem;
+        @include m.flex(column);
+        .about-project-header{
+            font-size: 1.5rem;
+        }
+
+        .about-project-text{
+            p{
+                white-space: pre-line;
+                line-height: 1.6;
+                font-size: 1.1rem;
+            }
+        }
+        .website{
+            padding: 2rem;
+            @include m.flex(row);
+            p{
+                margin-right: 1rem;
+            }
+            .blue-p{
+                cursor: pointer;
+                color: v.$blue;
+                transition: 0.3s;
+
+                &:hover{
+                    scale: 1.04;
+                    transition: 0.3s;
+                }
+            }
+            
+
+        }
+    }
+    @include m.desk{
+        .show-devices-container{
+            @include m.flex (row, space-evenly, center);
+            position: static;
+            height: 52svh;
+            margin-bottom: 5rem;
+
+            .show-desktop{
+                position: static;
+                img{
+                    height: 52svh;
+                }
+            }
+            .show-mobile{
+                position: static;
+                padding-bottom: 0.5rem;
+
+                img{
+                    height: 52svh;
+                }
+            }
+        }
+    }
+    @include m.small{
+        .about-project{
+            .about-project-text{
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+            .website{
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

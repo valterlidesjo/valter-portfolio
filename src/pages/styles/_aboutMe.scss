@@ -1,0 +1,45 @@
+@use "../../mainstyles/global" as g;
+@use "../../mainstyles/mixins" as m;
+@use "../../mainstyles/variabels" as v;
+
+.about-me-container {
+    @include m.flex(column);
+  .about-me-header {
+    font-size: 2rem;
+    padding: 3rem;
+  }
+  .about-me-text {
+    width: 80%;
+    font-size: 0.7rem;
+  }
+  .about-me-images{
+    @include m.flex(column);
+    img{
+        border: 2px solid black;
+        width: 14rem;
+        height: 20rem;
+        margin: 2rem 0;
+    }
+  }
+  @include m.desk{
+    .about-me-header {
+        font-size: 3rem;
+      }
+      .about-me-text {
+        width: 80%;
+        font-size: 1.2rem;
+      }
+      .about-me-images{
+        @include m.flex(row, space-evenly, center);
+        width: 100%;
+        max-width: 1100px;
+        padding-top: 5rem;
+        img{
+            border: 2px solid black;
+            width: 14rem;
+            height: 20rem;
+            margin: 2rem 0;
+        }
+      }
+  }
+}

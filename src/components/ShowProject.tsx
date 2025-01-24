@@ -1,0 +1,49 @@
+import "./styles/_showProjects.scss";
+
+interface ShowProjectProps {
+    header: string;
+    mobile: string;
+    desktop: string;
+    fontFamily: string;
+    fontWeight?: string;
+    fontSize: string;
+    aboutText: string;
+    website?: string;
+    url?: string;
+}
+
+const ShowProject: React.FC <ShowProjectProps> = ({ header, desktop, mobile, fontFamily, fontWeight, fontSize, aboutText, website, url }) => {
+  return (
+    <>
+        <div className="show-projects-container">
+            <div className="show-projects-header" style={{ fontFamily: fontFamily, fontWeight: fontWeight, fontSize: fontSize }}>
+                {header}
+            </div>
+            <div className="show-devices-container">
+                <div className="show-mobile">
+                    <img src={mobile} alt="Mobile" />
+                </div>
+                <div className="show-desktop">
+                    <img src={desktop} alt="Desktop" />
+                </div>
+            </div>
+            <div className="about-project">
+                <div className="about-project-header">
+                    <p>the project</p>
+                </div>
+                <div className="about-project-text">
+                    <p>{aboutText}</p>
+                </div>
+                {website && url && (
+                <div className="website">
+                    <p>-website</p>
+                    <p onClick={() => window.open(url)} className="blue-p">{website}</p>
+                </div>
+                )}
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default ShowProject

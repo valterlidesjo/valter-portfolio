@@ -1,0 +1,64 @@
+@use "../../mainstyles/global" as g;
+@use "../../mainstyles/variabels" as v;
+@use "../../mainstyles/mixins" as m;
+
+
+
+.headline {
+  font-family: "K2D", serif;
+    font-weight: 600;
+    font-size: 9vw;
+    z-index: 2;
+    @include m.desk{
+      font-weight: 300;
+    }
+  }
+  
+  .inset {
+    position: absolute;
+    inset: 0;
+  }
+  .white {
+    color: black;
+  }
+  .gray {
+    color: #446;
+  }
+  
+  .full {
+    height: 35vh;
+    margin-top: 5rem;
+  }
+  
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fade-gradient {
+    position: absolute;
+    inset: 0; // Täck hela containern
+    background: linear-gradient(to bottom, white, v.$lightYellow); // Skapa fade-effekten
+    z-index: -1; // Lägg det under alla andra lager
+    @include m.desk{
+      background: linear-gradient(to bottom, white, v.$yellow);
+    }
+  }
+  .fade-gradient-container {
+    position: relative;
+    margin-top: -3rem;
+    width: 100%;
+    height: 30svh; // Anpassa för att skapa tillräckligt med utrymme
+    background: linear-gradient(to bottom, v.$yellow, white);
+    z-index: -1; // Säkerställ att det ligger bakom efterföljande innehåll
+    margin-bottom: 15rem;
+    @include m.desk{
+      margin-top: 0;
+    }
+  }
+
+  .parallax-banner-content{
+    @include m.flex(row);
+    
+  }

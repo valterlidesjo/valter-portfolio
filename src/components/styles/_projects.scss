@@ -1,0 +1,148 @@
+@use "../../mainstyles/global" as g;
+@use "../../mainstyles/variabels" as v;
+@use "../../mainstyles/mixins" as m;
+
+
+.projects-container {
+  @include m.flex(column, space-between, center);
+  width: 100%;
+  height: 100svh;
+  margin: 10rem 0;
+
+  .ss-container {
+    width: 12rem;
+    height: 17rem;
+    border: 2px solid black;
+    background: v.$green;
+    @include m.flex(column);
+    margin-left: 5rem;
+    z-index: 3;
+    cursor: pointer;
+
+    .ss {
+      font-family: "Poppins", serif;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  .white-box-container {
+    position: relative;
+    .white-box {
+      position: absolute;
+      top: -150px;
+      left: -100px;
+      width: 12rem;
+      height: 17rem;
+      border: 2px solid black;
+      background: v.$white;
+    }
+  }
+  .sund-container {
+    width: 12rem;
+    height: 17rem;
+    border: 2px solid black;
+    background: v.$yellow;
+    @include m.flex(column);
+    margin-right: 5rem;
+    z-index: 3;
+    cursor: pointer;
+
+    .sund {
+      font-family: "Satisfy", serif;
+      font-size: 2rem;
+      margin: 0.7rem 0 0.7rem 0;
+    }
+    img {
+      width: 7rem;
+      height: 9rem;
+    }
+  }
+  .white-box-2-container {
+    position: relative;
+    .white-box-2 {
+      position: absolute;
+      top: -150px;
+      left: -100px;
+      width: 12rem;
+      height: 17rem;
+      border: 2px solid black;
+      background: v.$white;
+    }
+  }
+  .training-container {
+    width: 12rem;
+    height: 17rem;
+    border: 2px solid black;
+    background: v.$green;
+    @include m.flex(column);
+    margin-left: 5rem;
+    z-index: 3;
+    cursor: pointer;
+
+
+    .training {
+      font-family: "Baskervville SC", serif;
+      font-size: 2rem;
+      margin: 0.7rem 0 0.7rem 0;
+    }
+    img {
+      width: 7.5rem;
+      height: 7.5rem;
+    }
+  }
+
+  @include m.desk {
+    .ss-container {
+      margin-left: 25rem;
+      transition: 0.5s;
+      box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    }
+    .ss-container:hover{
+        scale: 1.1;
+        transition: 0.5s;
+        box-shadow: 10px 10px 7px rgba(33,33,33,.7);
+      }
+    .sund-container {
+      margin-right: 25rem;
+      transition: 0.5s;
+      box-shadow: -5px 5px 7px rgba(33,33,33,.7);
+    }
+    .sund-container:hover{
+        scale: 1.1;
+        transition: 0.5s;
+        box-shadow: -10px 10px 7px rgba(33,33,33,.7);
+      }
+    .training-container {
+      margin-left: 25rem;
+      transition: 0.5s;
+      box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    }
+    .training-container:hover{
+        scale: 1.1;
+        transition: 0.5s;
+        box-shadow: 10px 10px 7px rgba(33,33,33,.7);
+      }
+    .white-box-container {
+      .white-box {
+        transform: rotate(90deg);
+        top: -200px;
+        left: -150px;
+        width: 18rem;
+        height: 18rem;
+      }
+    }
+    .white-box-2-container {
+      .white-box-2 {
+        transform: rotate(90deg);
+        top: -80px;
+        left: -150px;
+        width: 18rem;
+        height: 18rem;
+      }
+    }
+  }
+}

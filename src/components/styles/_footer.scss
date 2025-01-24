@@ -1,0 +1,113 @@
+@use "../../mainstyles/global" as g;
+@use "../../mainstyles/variabels" as v;
+@use "../../mainstyles/mixins" as m;
+
+.footer-container {
+  @include m.flex(column);
+  width: 100%;
+  padding-top: 8rem;
+  .footer-top-container {
+    @include m.flex(row, space-between, center);
+    width: 100%;
+    height: 10rem;
+    .footer-left {
+      @include m.flex(column, space-between, flex-start);
+      height: 100%;
+      padding-left: 2rem;
+      .left-1 {
+        @include m.flex(row);
+        cursor: pointer;
+        .github {
+          font-size: 3rem;
+          padding-right: 1rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      .left-2 {
+        @include m.flex(row);
+        cursor: pointer;
+
+        .linkedin {
+          font-size: 3rem;
+          padding-right: 1rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      .left-3 {
+        @include m.flex(row);
+        cursor: pointer;
+        .mail {
+          font-size: 3rem;
+          padding-right: 1rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    .footer-right {
+      @include m.flex(column, space-between, flex-end);
+      height: 100%;
+      padding-right: 2rem;
+      .right-1,
+      .right-2,
+      .right-3 {
+        text-align: right;
+        p {
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+      .right-1 {
+        padding-top: 15px;
+      }
+      .right-3 {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 2rem;
+    p {
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+  @include m.small {
+    padding-top: 3rem;
+    .footer-top-container {
+      .footer-left {
+        padding-left: 1rem;
+        .left-1,
+        .left-2,
+        .left-3 {
+            p{
+                font-size: 0.8rem;
+            }
+        }
+        .github, .linkedin, .mail{
+            font-size: 1.3rem;
+        }
+      }
+      .footer-right{
+        padding-right: 1rem;
+        .right-1,
+      .right-2,
+      .right-3 {
+        p{
+            font-size: 0.8rem;
+        }
+      }
+      }
+    }
+    .footer-bottom {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
