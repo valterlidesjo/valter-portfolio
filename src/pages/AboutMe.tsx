@@ -1,7 +1,7 @@
 import "./styles/_aboutMe.scss";
-import resa from "../assets/bildresa.jpg";
-import surf from "../assets/bildsurf.jpg";
-import valterida from "../assets/valterida.jpg";
+import resa from "../assets/bildresa.webp";
+import surf from "../assets/bildsurf.webp";
+import valterida from "../assets/valterida.webp";
 
 const AboutMe = () => {
   return (
