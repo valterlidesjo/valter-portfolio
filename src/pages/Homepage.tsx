@@ -7,7 +7,6 @@ import { FaReact, FaHtml5, FaSass, FaNode, FaPhp } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiTypescript, SiMongodb, SiExpress, SiMysql } from "react-icons/si";
 import { useNavigate } from "react-router";
-import BlurText from "../animation/Blurtext";
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -46,18 +45,8 @@ const Homepage = () => {
         </div>
         <div className="homepage-header">
           <div className="top-text-container">
-          <BlurText
-          text="Fullstack"
-          delay={150}
-          animateBy="words"
-          direction="top"
-          />
-          <BlurText
-          text="Developer."
-          delay={150}
-          animateBy="words"
-          direction="top"
-          />
+          <p>Fullstack</p>
+          <p>Developer.</p>
           </div>
           <div className="g-text-container">
             <p className="g-text">
