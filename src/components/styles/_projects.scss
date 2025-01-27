@@ -96,6 +96,8 @@
   }
 
   @include m.desk {
+    height: 110svh;
+
     .ss-container {
       margin-left: 25rem;
       transition: 0.5s;

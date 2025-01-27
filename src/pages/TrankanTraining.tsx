@@ -6,7 +6,7 @@ import ttDesk from "../assets/ttDesktop.png";
 const TrankanTraining = () => {
   return (
     <>
-    <ShowProject mobile={ttMobile} desktop={ttDesk} header='Trånkan Training' fontFamily='"Baskervville SC"' fontSize='2.5rem' 
+    <ShowProject mobile={ttMobile} desktop={ttDesk} header='Trånkan Training' fontFamily='"Baskervville SC"' fontSize='2.5rem' padding='0.3rem' 
     aboutText='
     -training website
     -fun project to teach myself php and mysql

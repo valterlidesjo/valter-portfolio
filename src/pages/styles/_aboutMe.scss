@@ -11,6 +11,11 @@
   .about-me-text {
     width: 80%;
     font-size: 0.7rem;
+    .blue-p{
+      font-size: 0.8rem;
+      color: v.$blue;
+      cursor: pointer;
+    }
   }
   .about-me-images{
     @include m.flex(column);
@@ -28,6 +33,9 @@
       .about-me-text {
         width: 80%;
         font-size: 1.2rem;
+        .blue-p{
+          font-size: 1.3rem;
+        }
       }
       .about-me-images{
         @include m.flex(row, space-evenly, center);

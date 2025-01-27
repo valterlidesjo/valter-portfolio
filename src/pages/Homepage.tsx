@@ -65,14 +65,13 @@ const Homepage = () => {
         </div>
         <div className="homepage-white-box"></div>
       </div>
-      <HelloBanner />
       <div className="homepage-container">
 
       
       <div className="me-info-container" onClick={() => navigate("/about-me")}>
         <p>
           I'm a swedish fullstack developer living in Stockholm. I enjoy
-          challanges, evolvement and finding new solutions. <br />
+          challenges, evolvement and finding new solutions. <br />
           I'm currently studying E-commerce WebDev while working on several
           projects on the side.
           <br />

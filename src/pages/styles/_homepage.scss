@@ -120,6 +120,7 @@
     transform: translate(-50%, -50%);
   }
   @include m.desk {
+    height: 40svh;
     .homepage-yellow {
       display: none;
     }
