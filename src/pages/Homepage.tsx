@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import "./styles/_homepage.scss";
 import valterImage from "../assets/image-valter.jpg";
-import { HelloBanner } from "../components/HelloBanner";
 import Projects from "../components/Projects";
 import { FaReact, FaHtml5, FaSass, FaNode, FaPhp } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
