@@ -2,10 +2,10 @@ import "./styles/_aboutMe.scss";
 import resa from "../assets/bildresa.webp";
 import surf from "../assets/bildsurf.webp";
 import valterida from "../assets/valterida.webp";
-import { Link, useNavigate } from "react-router";
+import { Link } from "react-router";
 
 const AboutMe = () => {
-  const navigate = useNavigate();
+
   return (
     <>
       <div className="about-me-container">

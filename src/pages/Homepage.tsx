@@ -5,10 +5,9 @@ import Projects from "../components/Projects";
 import { FaReact, FaHtml5, FaSass, FaNode, FaPhp } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiTypescript, SiMongodb, SiExpress, SiMysql } from "react-icons/si";
-import { Link, useNavigate } from "react-router";
+import { Link } from "react-router";
 
 const Homepage = () => {
-  const navigate = useNavigate();
 
     useEffect(() => {
         const image = document.querySelector(".homepage-image-container");
