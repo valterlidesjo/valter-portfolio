@@ -8,6 +8,7 @@
   width: 100%;
   height: 140svh;
   margin: 10rem 0;
+  
 
   .ss-container {
     width: 12rem;
@@ -18,6 +19,8 @@
     margin-left: 5rem;
     z-index: 3;
     cursor: pointer;
+    text-decoration: none;
+    color: v.$black;
 
     .ss {
       font-family: "Poppins", serif;
@@ -50,6 +53,8 @@
     margin-right: 5rem;
     z-index: 3;
     cursor: pointer;
+    text-decoration: none;
+    color: v.$black;
 
     .sund {
       font-family: "Satisfy", serif;
@@ -82,6 +87,8 @@
     margin-left: 5rem;
     z-index: 3;
     cursor: pointer;
+    text-decoration: none;
+    color: v.$black;
 
 
     .training {

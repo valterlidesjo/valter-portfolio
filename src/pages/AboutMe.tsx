@@ -2,7 +2,7 @@ import "./styles/_aboutMe.scss";
 import resa from "../assets/bildresa.webp";
 import surf from "../assets/bildsurf.webp";
 import valterida from "../assets/valterida.webp";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const AboutMe = () => {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ const AboutMe = () => {
             20 year old man named valter lidesjö. living in an apartment with my
             girlfriend in the southside of stockholm. born and raised in
             southside of stockholm. oldest sibling out of four. loved hammarby
-            all my life. studying, working on my own <span className="blue-p" onClick={() => navigate("/projects")}>projects</span> and working extra
+            all my life. studying, working on my own <Link to={"/projects"} className="blue-p" >projects</Link> and working extra
             in a store close by. <br />
             love travelling, working out, reading, spending time with my friends
             family and girlfriend. music is also a big part of my life. techno,

@@ -1,45 +1,44 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 import "./styles/_footer.scss";
-import { useNavigate } from 'react-router';
+import { Link } from 'react-router';
 
 const Footer = () => {
-    const navigate = useNavigate();
 
   return (
     <>
     <div className="footer-container">
         <div className="footer-top-container">
         <div className="footer-left">
-            <div className="left-1" onClick={() => window.open('https://github.com/valterlidesjo', '_blank')}>
+            <a className="left-1" href='https://github.com/valterlidesjo' target='_blank'>
                 <FaGithub className='github'/>
                 <p>Github</p>
-            </div>
-            <div className="left-2" onClick={() => window.open('https://www.linkedin.com/in/valterlidesjo/', '_blank')}>
+            </a>
+            <a className="left-2" href='https://www.linkedin.com/in/valterlidesjo/' target='_blank'>
                 <FaLinkedin className='linkedin'/>
                 <p>LinkedIn</p>
-            </div>
-            <div className="left-3" onClick={() => window.location.href = 'mailto:valle.lidesjo@gmail.com'}>
+            </a>
+            <a className="left-3" href='mailto:valle.lidesjo@gmail.com'>
                 <SiGmail className='mail'/>
                 <p>valle.lidesjo@gmail.com</p>
-            </div>
+            </a>
         </div>
         <div className="footer-right">
-            <div className="right-1" onClick={() => navigate("/")}>
+            <Link to={"/"} className="right-1" >
                 <p>Home</p>
-            </div>
-            <div className="right-2" onClick={() => navigate("/projects")}>
+            </Link>
+            <Link to={"/projects"} className="right-2" >
                 <p>Projects</p>
-            </div>
-            <div className="right-3" onClick={() => navigate("/about-me")}>
+            </Link>
+            <Link to={"/about-me"} className="right-3" >
                 <p>About Me</p>
-            </div>
+            </Link>
 
         </div>
         </div>
-        <div className="footer-bottom">
-            <p onClick={() => navigate("/")}>Made by Valter Lidesjö</p>
-        </div>
+        <Link to={"/"} className="footer-bottom">
+            <p >Made by Valter Lidesjö</p>
+        </Link>
     </div>
     </>
   )

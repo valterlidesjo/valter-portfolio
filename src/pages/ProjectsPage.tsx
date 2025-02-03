@@ -1,12 +1,11 @@
 import "./styles/_projectsPage.scss";
-import { useNavigate } from "react-router";
+import { Link } from "react-router";
 import ssBild from "../assets/svartssbild.png";
 import sundBild from "../assets/sundbild.jpeg";
 import trainingBild from "../assets/trainingbild.jpg";
 
 
 const ProjectsPage = () => {
-  const navigate = useNavigate();
   return (
     <>
       <div className="projects-page-container">
@@ -24,35 +23,32 @@ const ProjectsPage = () => {
             paintings, movie app with api etc. <br /> <br />
             started an education in webdev and got a better computer. learned
             php, mysql and db and made my first "bigger" project{" "}
-            <span
+            <Link to={"/projects/trankantraining"}
               className="blue-p"
-              onClick={() => navigate("/projects/trankantraining")}
             >
               trånkan training
-            </span>{" "}
+            </Link>{" "}
             <br /> <br />
             learned typescript, scss, node, mongodb and express with smaller
             projects. cms with localstorage, weather app with mongo, express and
             node. felt comfortable with that so started learning react to
             complete the full mern stack and fell in love <br /> <br />
             instantly started a bigger project with three classmates.{" "}
-            <span
+            <Link to={"/projects/sillystocks"}
               className="blue-p"
-              onClick={() => navigate("/projects/sillystocks")}
             >
               silly stocks
-            </span>{" "}
+            </Link>{" "}
             a stock browsing website. made all the backend with node, mongo and
             express but also the frontend to complete my mern stack. <br />{" "}
             <br />
             found a family friends website for their luxurios getaway that
             needed some love. made a new website for{" "}
-            <span
+            <Link to={"/projects/sundnergarden"}
               className="blue-p"
-              onClick={() => navigate("/projects/sundnergarden")}
             >
               sund nergården
-            </span>{" "}
+            </Link>{" "}
             in react and scss. started by teaching myself figma and made a skiss
             and then turned it into a website. only frontend project so focused
             on good reusable and scalable code with nice structure. <br />{" "}
@@ -62,21 +58,21 @@ const ProjectsPage = () => {
           </p>
         </div>
         <div className="projects">
-          <div className="projects-tt" onClick={() => navigate("/projects/trankantraining")}>
+          <Link to={"/projects/trankantraining"} className="projects-tt" >
             <div className="training-top-text training">Trånkan</div>
             <img src={trainingBild} alt="Trånkan Training" />
             <div className="training-bottom-text training">Training</div>
-          </div>
-          <div className="projects-ss" onClick={() => navigate("/projects/sillystocks")}>
+          </Link>
+          <Link to={"/projects/sillystocks"} className="projects-ss" >
             <div className="ss-top-text ss">SILLY</div>
             <img src={ssBild} alt="Silly Stocks" />
             <div className="ss-bottom-text ss">STOCKS</div>
-          </div>
-          <div className="projects-sund" onClick={() => navigate("/projects/sundnergarden")}>
+          </Link>
+          <Link to={"/projects/sundnergarden"} className="projects-sund" >
             <div className="sund-top-text sund">Sund</div>
             <img src={sundBild} alt="Sund Nergården" />
             <div className="sund-bottom-text sund">Nergården</div>
-          </div>
+          </Link>
         </div>
       </div>
     </>

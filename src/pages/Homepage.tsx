@@ -5,7 +5,7 @@ import Projects from "../components/Projects";
 import { FaReact, FaHtml5, FaSass, FaNode, FaPhp } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiTypescript, SiMongodb, SiExpress, SiMysql } from "react-icons/si";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -67,7 +67,7 @@ const Homepage = () => {
       <div className="homepage-container">
 
       
-      <div className="me-info-container" onClick={() => navigate("/about-me")}>
+      <Link to={"/about-me"} className="me-info-container">
         <p>
           I'm a swedish fullstack developer living in Stockholm. I enjoy
           challenges, evolvement and finding new solutions. <br />
@@ -77,7 +77,7 @@ const Homepage = () => {
           I'm an ambitious, whole hearted, hard working person whether it comes
           to development, training or my friends and family. Check out my projects below or click here to learn more about me.
         </p>
-      </div>
+      </Link>
       <div className="languages-box">
         <div className="row-1">
             <div className="icon-box">
@@ -135,9 +135,9 @@ const Homepage = () => {
         </div>
         </div>
       </div>
-      <div className="resume-button">
-        <button onClick={() => navigate("/projects")}>My Projects</button>
-      </div>
+      <Link to={"/projects"} className="projects-button">
+        <button >My Projects</button>
+      </Link>
       </div>
       <Projects />
     </>

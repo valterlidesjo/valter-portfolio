@@ -15,6 +15,7 @@
       font-size: 0.8rem;
       color: v.$blue;
       cursor: pointer;
+      text-decoration: none;
     }
   }
   .projects {
@@ -27,6 +28,8 @@
       z-index: 3;
       cursor: pointer;
       margin: 2rem 0;
+      text-decoration: none;
+      color: v.$black;
 
       .ss {
         font-family: "Poppins", serif;
@@ -46,6 +49,8 @@
       z-index: 3;
       cursor: pointer;
       margin: 2rem 0;
+      text-decoration: none;
+      color: v.$black;
 
       .sund {
         font-family: "Satisfy", serif;
@@ -65,6 +70,8 @@
       z-index: 3;
       cursor: pointer;
       margin: 2rem 0;
+      text-decoration: none;
+      color: v.$black;
 
       .training {
         font-family: "Baskervville SC", serif;

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./styles/_showProjects.scss";
 
 interface ShowProjectProps {
@@ -38,7 +39,7 @@ const ShowProject: React.FC <ShowProjectProps> = ({ header, desktop, mobile, fon
                 {website && url && (
                 <div className="website">
                     <p>-website</p>
-                    <p onClick={() => window.open(url)} className="blue-p">{website}</p>
+                    <Link to={url} className="blue-p">{website}</Link>
                 </div>
                 )}
             </div>
