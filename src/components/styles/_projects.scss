@@ -2,13 +2,11 @@
 @use "../../mainstyles/variabels" as v;
 @use "../../mainstyles/mixins" as m;
 
-
 .projects-container {
   @include m.flex(column, space-between, center);
   width: 100%;
   height: 140svh;
   margin: 10rem 0;
-  
 
   .ss-container {
     width: 12rem;
@@ -90,7 +88,6 @@
     text-decoration: none;
     color: v.$black;
 
-
     .training {
       font-family: "Baskervville SC", serif;
       font-size: 2rem;
@@ -101,40 +98,72 @@
       height: 7.5rem;
     }
   }
+  .white-box-3-container {
+    position: relative;
+    .white-box-3 {
+      position: absolute;
+      top: -150px;
+      left: -100px;
+      width: 12rem;
+      height: 17rem;
+      border: 2px solid black;
+      background: v.$white;
+    }
+  }
+  .terni-container {
+    width: 12rem;
+    height: 17rem;
+    border: 2px solid black;
+    background: v.$yellow;
+    @include m.flex(column);
+    margin-right: 5rem;
+    z-index: 3;
+    cursor: pointer;
+    text-decoration: none;
+    color: v.$black;
+
+    .terni {
+      font-family: "Caveat", serif;
+      font-size: 3rem;
+      margin: 0.7rem 0 0.7rem 0;
+    }
+    img {
+      width: 9rem;
+      height: 11rem;
+    }
+  }
 
   @include m.desk {
-    height: 110svh;
+    height: 160svh;
 
-    .ss-container {
-      margin-left: 25rem;
-      transition: 0.5s;
-      box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-    }
-    .ss-container:hover{
-        scale: 1.1;
-        transition: 0.5s;
-        box-shadow: 10px 10px 7px rgba(33,33,33,.7);
-      }
-    .sund-container {
-      margin-right: 25rem;
-      transition: 0.5s;
-      box-shadow: -5px 5px 7px rgba(33,33,33,.7);
-    }
-    .sund-container:hover{
-        scale: 1.1;
-        transition: 0.5s;
-        box-shadow: -10px 10px 7px rgba(33,33,33,.7);
-      }
+    .ss-container,
     .training-container {
       margin-left: 25rem;
       transition: 0.5s;
-      box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+      box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
     }
-    .training-container:hover{
-        scale: 1.1;
-        transition: 0.5s;
-        box-shadow: 10px 10px 7px rgba(33,33,33,.7);
-      }
+    .ss-container:hover,
+    .training-container:hover {
+      scale: 1.1;
+      transition: 0.5s;
+      box-shadow: 10px 10px 7px rgba(33, 33, 33, 0.7);
+    }
+    .sund-container,
+    .terni-container {
+      margin-right: 25rem;
+      transition: 0.5s;
+      box-shadow: -5px 5px 7px rgba(33, 33, 33, 0.7);
+    }
+    .sund-container:hover,
+    .terni-container:hover {
+      scale: 1.1;
+      transition: 0.5s;
+      box-shadow: -10px 10px 7px rgba(33, 33, 33, 0.7);
+    }
+    .training-container{
+      margin-top: 8rem;
+    }
+
     .white-box-container {
       .white-box {
         transform: rotate(90deg);
@@ -144,8 +173,18 @@
         height: 18rem;
       }
     }
+
     .white-box-2-container {
       .white-box-2 {
+        transform: rotate(90deg);
+        top: -80px;
+        left: -150px;
+        width: 18rem;
+        height: 18rem;
+      }
+    }
+    .white-box-3-container {
+      .white-box-3 {
         transform: rotate(90deg);
         top: -80px;
         left: -150px;

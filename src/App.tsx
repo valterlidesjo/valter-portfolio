@@ -8,6 +8,7 @@ import TrankanTraining from "./pages/TrankanTraining";
 import ProjectsPage from "./pages/ProjectsPage";
 import AboutMe from "./pages/AboutMe";
 import useScrollToTop from "./services/scrollToTop";
+import Terni from "./pages/Terni";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
               <Route
                 path="/projects/trankantraining"
                 element={<TrankanTraining />}
+              />
+              <Route
+                path="/projects/terni"
+                element={<Terni />}
               />
             </Routes>
             <Footer />

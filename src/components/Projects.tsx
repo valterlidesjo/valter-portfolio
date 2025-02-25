@@ -2,6 +2,7 @@ import "./styles/_projects.scss";
 import ssBild from "../assets/svartssbild.png";
 import sundBild from "../assets/sundbild.jpeg";
 import trainingBild from "../assets/trainingbild.jpg";
+import terniBild from "../assets/terni-screen.png";
 import { Link } from "react-router";
 
 const Projects = () => {
@@ -29,6 +30,14 @@ const Projects = () => {
         <div className="training-top-text training">Trånkan</div>
             <img src={trainingBild} alt="Trånkan Training" />
             <div className="training-bottom-text training">Training</div>
+        </Link>
+        <div className="white-box-3-container">
+            <div className="white-box-3"></div>
+        </div>
+        <Link to={"/projects/terni"} className="terni-container">
+        <div className="terni-top-text terni">Terni</div>
+            <img src={terniBild} alt="Terni" />
+            <div className="terni-bottom-text terni"></div>
         </Link>
     </div>
     </>

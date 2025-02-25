@@ -69,7 +69,7 @@ const Homepage = () => {
       <Link to={"/about-me"} className="me-info-container">
         <p>
           I'm a swedish fullstack developer living in Stockholm. I enjoy
-          challenges, evolvement and finding new solutions. <br />
+          challenges, learning new tech, evolvement and finding new solutions. <br />
           I'm currently studying E-commerce WebDev while working on several
           projects on the side.
           <br />
