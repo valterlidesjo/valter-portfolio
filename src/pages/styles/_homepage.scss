@@ -84,24 +84,14 @@
   position: relative;
   width: 100%;
   height: 50svh;
-  .homepage-yellow {
-    width: 220px;
-    height: 290px;
-    background: v.$yellow;
-    position: absolute;
-    top: 10%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
 
   .homepage-image-container {
     position: absolute;
     width: 220px;
     height: 290px;
     top: 23%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+    right: 0;
+    transform: translateY(-50%);
     z-index: 2;
     img {
       width: 220px;
@@ -109,9 +99,9 @@
     }
   }
 
-  .homepage-white-box {
+  .homepage-yellow {
     position: absolute;
-    border: 2px solid black;
+    background: v.$yellow;
     width: 220px;
     height: 290px;
     z-index: 1;

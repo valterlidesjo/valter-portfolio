@@ -29,13 +29,12 @@ const Homepage = () => {
         <div className="homepage-start-yellow"></div>
       </div>
       <div className="boxes-container">
-        <div className="homepage-yellow"></div>
 
         <picture className="homepage-image-container">
           <source srcSet={valterImageW} type="image/webp" />
           <img src={valterImage} alt="Picture of me" loading="eager" decoding="async" fetchPriority="high" />
         </picture>
-        <div className="homepage-white-box"></div>
+        <div className="homepage-yellow"></div>
       </div>
       <div className="homepage-container">
         <LanguageBox />
