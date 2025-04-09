@@ -26,7 +26,7 @@
     width: 100%;
     @include m.flex(row, flex-end, center);
     z-index: 5;
-    p {
+    h1 {
       font-family: "Limelight", serif;
       margin: 1rem 1rem 0 0;
       font-size: 1.7rem;
@@ -36,7 +36,7 @@
     width: 100%;
     @include m.flex(column, center, flex-start);
 
-    p {
+    h2 {
       font-family: "K2D", serif;
       font-size: 3rem;
       font-weight: 700;

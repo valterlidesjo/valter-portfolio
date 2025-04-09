@@ -80,7 +80,6 @@ const ProjectsPage = () => {
           <Link to={"/projects/terni"} className="projects-terni">
             <div className="terni-top-text terni">Terni</div>
             <img src={terniBild} alt="Terni" />
-            {/* <div className="terni-bottom-text terni">Terni</div> */}
           </Link>
         </div>
       </div>
