@@ -1,13 +1,15 @@
 import ShowProject from "../components/ShowProject"
 import terniDesk from "../assets/TerniDesk.png";
+import terniDeskW from "../assets/TerniDesk.webp";
 import terniMobile from "../assets/TerniMobile.png";
+import terniMobileW from "../assets/TerniMobile.webp";
 
 
 
 const Terni = () => {
   return (
     <>
-    <ShowProject header="Terni" mobile={terniMobile} desktop={terniDesk} fontFamily='"Caveat"' website="terni" url="https://terni.netlify.app/" fontSize="3rem" 
+    <ShowProject header="Terni" mobile={terniMobile} mobileW={terniMobileW} desktop={terniDesk} desktopW={terniDeskW} fontFamily='"Caveat"' website="terni" url="https://terni.netlify.app/" fontSize="3rem" 
     aboutText="
     -frontend restaurant website in react with tailwind
     -booking component made with an third party api

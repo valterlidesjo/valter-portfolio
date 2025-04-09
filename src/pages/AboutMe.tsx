@@ -1,7 +1,11 @@
 import "./styles/_aboutMe.scss";
-import resa from "../assets/bildresa.webp";
-import surf from "../assets/bildsurf.webp";
-import valterida from "../assets/valterida.webp";
+import resaW from "../assets/bildresa.webp";
+import resa from "../assets/bildresa.jpg";
+import surfW from "../assets/bildsurf.webp";
+import surf from "../assets/bildsurf.jpg";
+import valteridaW from "../assets/valterida.webp";
+import valterida from "../assets/valterida.jpg";
+
 import { Link } from "react-router";
 
 const AboutMe = () => {
@@ -30,9 +34,30 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="about-me-images">
-          <img src={resa} alt="Me in Mexico" />
+        <picture>
+                <source srcSet={resaW} type="image/webp" />
+                <img
+                src={resa}
+                alt="Me in Mexico"
+                />
+            </picture>
+            <picture>
+                <source srcSet={valteridaW} type="image/webp" />
+                <img
+                src={valterida}
+                alt="Me and Ida"
+                />
+            </picture>
+            <picture>
+                <source srcSet={surfW} type="image/webp" />
+                <img
+                src={surf}
+                alt="Me surfing in Malibu"
+                />
+            </picture>
+          {/* <img src={resa} alt="Me in Mexico" />
           <img src={valterida} alt="Me and Ida" />
-          <img src={surf} alt="Me surfing in Malibu" />
+          <img src={surf} alt="Me surfing in Malibu" /> */}
         </div>
       </div>
     </>

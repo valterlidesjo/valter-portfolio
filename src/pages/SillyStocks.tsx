@@ -1,12 +1,14 @@
 import ShowProject from '../components/ShowProject'
 import ssMobile from "../assets/Mobile.png";
+import ssMobileW from "../assets/Mobile.webp";
 import ssDesk from "../assets/Desk.png";
+import ssDeskW from "../assets/Desk.webp";
 
 
 const SillyStocks = () => {
   return (
     <>
-    <ShowProject mobile={ssMobile} desktop={ssDesk} header='SILLY STOCKS' fontFamily='"Poppins"' fontWeight='bold' fontSize='2.5rem' website='silly stocks' url='https://sillystocks.netlify.app/' 
+    <ShowProject mobile={ssMobile} mobileW={ssMobileW} desktop={ssDesk} desktopW={ssDeskW} header='SILLY STOCKS' fontFamily='"Poppins"' fontWeight='bold' fontSize='2.5rem' website='silly stocks' url='https://sillystocks.netlify.app/' 
     aboutText='
     -a stock app built with MERN stack
     -user can browse stocks, news, crypto, markets, categories

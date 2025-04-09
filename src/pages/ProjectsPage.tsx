@@ -1,9 +1,13 @@
 import "./styles/_projectsPage.scss";
 import { Link } from "react-router";
 import ssBild from "../assets/svartssbild.png";
+import ssBildW from "../assets/svartssbild.webp";
 import sundBild from "../assets/sundbild.jpeg";
+import sundBildW from "../assets/sundbild.webp";
 import trainingBild from "../assets/trainingbild.jpg";
+import trainingBildW from "../assets/trainingbild.webp";
 import terniBild from "../assets/terni-screen.png";
+import terniBildW from "../assets/terni-screen.webp";
 
 const ProjectsPage = () => {
   return (
@@ -64,22 +68,46 @@ const ProjectsPage = () => {
         <div className="projects">
           <Link to={"/projects/trankantraining"} className="projects-tt">
             <div className="training-top-text training">Trånkan</div>
-            <img src={trainingBild} alt="Trånkan Training" />
+            <picture>
+                <source srcSet={trainingBildW} type="image/webp" />
+                <img
+                src={trainingBild}
+                alt="Trånkan training image"
+                />
+            </picture>
             <div className="training-bottom-text training">Training</div>
           </Link>
           <Link to={"/projects/sillystocks"} className="projects-ss">
             <div className="ss-top-text ss">SILLY</div>
-            <img src={ssBild} alt="Silly Stocks" />
+            <picture>
+                <source srcSet={ssBildW} type="image/webp" />
+                <img
+                src={ssBild}
+                alt="Silly Stocks image"
+                />
+            </picture>
             <div className="ss-bottom-text ss">STOCKS</div>
           </Link>
           <Link to={"/projects/sundnergarden"} className="projects-sund">
             <div className="sund-top-text sund">Sund</div>
-            <img src={sundBild} alt="Sund Nergården" />
+            <picture>
+                <source srcSet={sundBildW} type="image/webp" />
+                <img
+                src={sundBild}
+                alt="Sund Nergården image"
+                />
+            </picture>
             <div className="sund-bottom-text sund">Nergården</div>
           </Link>
           <Link to={"/projects/terni"} className="projects-terni">
             <div className="terni-top-text terni">Terni</div>
-            <img src={terniBild} alt="Terni" />
+            <picture>
+                <source srcSet={terniBildW} type="image/webp" />
+                <img
+                src={terniBild}
+                alt="Terni restaurant image"
+                />
+            </picture>
           </Link>
         </div>
       </div>

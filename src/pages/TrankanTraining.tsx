@@ -1,12 +1,14 @@
 
 import ShowProject from '../components/ShowProject'
 import ttMobile from "../assets/ttMobile.png";
+import ttMobileW from "../assets/ttMobile.webp";
 import ttDesk from "../assets/ttDesktop.png";
+import ttDeskW from "../assets/ttDesktop.webp";
 
 const TrankanTraining = () => {
   return (
     <>
-    <ShowProject mobile={ttMobile} desktop={ttDesk} header='Trånkan Training' fontFamily='"Baskervville SC"' fontSize='2.5rem' padding='0.3rem' 
+    <ShowProject mobile={ttMobile} mobileW={ttMobileW} desktop={ttDesk} desktopW={ttDeskW} header='Trånkan Training' fontFamily='"Baskervville SC"' fontSize='2.5rem' padding='0.3rem' 
     aboutText='
     -training website
     -fun project to teach myself php and mysql
