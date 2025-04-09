@@ -45,7 +45,7 @@
     }
     .g-text-container {
       width: 230px;
-      
+
       .g-text {
         padding-left: 2rem;
         color: v.$grey;
@@ -104,8 +104,8 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     img {
-      width: 100%;
-      height: 100%;
+      width: 220px;
+      height: 290px;
     }
   }
 
@@ -129,11 +129,11 @@
       left: 57%;
       width: 160px;
       height: 210px;
-      transition: transform 0.3s ease;
-      border: 2px solid black;
-      &.animate {
-        animation: bounceAnimation 2s ease-in-out;
+      img {
+        width: 160px;
+        height: 210px;
       }
+      
     }
     .homepage-white-box {
       top: -24vh;
@@ -152,12 +152,12 @@
     padding: 2rem;
     margin: 2rem;
     max-width: 700px;
-    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
     transition: 0.5s;
     cursor: pointer;
     text-decoration: none;
     color: v.$black;
-    
+
     p {
       font-family: "K2D", serif;
       font-size: 1.4rem;
@@ -166,9 +166,9 @@
       line-height: 1.6;
     }
   }
-  .me-info-container:hover{
+  .me-info-container:hover {
     scale: 1.02;
-    box-shadow:12px 12px 7px rgba(0,0,0,.7);
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.7);
     transition: 0.5s;
   }
   .languages-box {
@@ -185,7 +185,7 @@
       font-size: 3rem;
       margin: 1rem;
     }
-    .icon-box{
+    .icon-box {
       position: relative;
     }
     .icon-box .react-tooltip,
@@ -218,14 +218,14 @@
       font-size: 1.2rem;
     }
   }
-  
+
   .projects-button {
     width: 100%;
     @include m.flex(row);
     margin: 4rem 0;
     max-width: 700px;
     text-decoration: none;
-    
+
     button {
       border: 2px solid black;
       font-family: "Modak", serif;
@@ -237,7 +237,7 @@
       cursor: pointer;
       color: black;
     }
-    
+
     @include m.desk {
       button {
         transition: 0.8s;
@@ -249,16 +249,15 @@
       }
     }
   }
-  @include m.small{
-    .me-info-container{
-      p{
+  @include m.small {
+    .me-info-container {
+      p {
         font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.6;
+        font-weight: 500;
+        line-height: 1.6;
       }
     }
     .languages-box {
-
       .icon {
         font-size: 2rem;
         margin: 0.7rem;
