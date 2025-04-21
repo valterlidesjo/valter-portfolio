@@ -20,7 +20,11 @@ const Projects = () => {
             <source srcSet={ssBildW} type="image/webp" />
             <img
               src={ssBild}
-              alt="Picture of me"
+              alt="Picture of Silly stocks"
+              width={160}
+              height={160}
+              loading="lazy"
+              title="Picture of Silly stocks"
             />
           </picture>
           <div className="ss-bottom-text ss">STOCKS</div>
@@ -34,7 +38,11 @@ const Projects = () => {
             <source srcSet={sundBildW} type="image/webp" />
             <img
               src={sundBild}
-              alt="Picture of me"
+              alt="Picture of Sund Nergården"
+              width={160}
+              height={160}
+              loading="lazy"
+              title="Picture of Sund Nergården"
             />
           </picture>
           <div className="sund-bottom-text sund">Nergården</div>
@@ -44,13 +52,17 @@ const Projects = () => {
         </div>
         <Link to={"/projects/trankantraining"} className="training-container">
           <div className="training-top-text training">Trånkan</div>
-            <picture>
-                <source srcSet={trainingBildW} type="image/webp" />
-                <img
-                src={trainingBild}
-                alt="Picture of me"
-                />
-            </picture>
+          <picture>
+            <source srcSet={trainingBildW} type="image/webp" />
+            <img
+              src={trainingBild}
+              alt="Picture of Trånkan Training"
+              title="Picture of Trånkan Training"
+              width={160}
+              height={160}
+              loading="lazy"
+            />
+          </picture>
           <div className="training-bottom-text training">Training</div>
         </Link>
         <div className="white-box-3-container">
@@ -59,12 +71,16 @@ const Projects = () => {
         <Link to={"/projects/terni"} className="terni-container">
           <div className="terni-top-text terni">Terni</div>
           <picture>
-                <source srcSet={terniBildW} type="image/webp" />
-                <img
-                src={terniBild}
-                alt="Picture of me"
-                />
-            </picture>
+            <source srcSet={terniBildW} type="image/webp" />
+            <img
+              src={terniBild}
+              alt="Picture of Terni"
+              title="Picture of Terni"
+              width={160}
+              height={160}
+              loading="lazy"
+            />
+          </picture>
           <div className="terni-bottom-text terni"></div>
         </Link>
       </div>

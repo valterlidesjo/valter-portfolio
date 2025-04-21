@@ -6,7 +6,6 @@ import { Link } from "react-router";
 import LanguageBox from "../components/LanguageBox";
 
 const Homepage = () => {
-
   return (
     <>
       <div className="homepage-start-top-container">
@@ -29,10 +28,18 @@ const Homepage = () => {
         <div className="homepage-start-yellow"></div>
       </div>
       <div className="boxes-container">
-
         <picture className="homepage-image-container">
           <source srcSet={valterImageW} type="image/webp" />
-          <img src={valterImage} alt="Picture of me" loading="eager" decoding="async" fetchPriority="high" />
+          <img
+            src={valterImage}
+            alt="Picture of me"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            width={220}
+            height={290}
+            title="Picture of me"
+          />
         </picture>
         <div className="homepage-yellow"></div>
       </div>
