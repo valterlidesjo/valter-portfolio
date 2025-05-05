@@ -54,9 +54,9 @@ const Homepage = () => {
             I'm currently studying E-commerce WebDev while working on several
             projects on the side.
             <br />
-            I'm an ambitious, whole hearted, hard working person whether it
-            comes to development, training or my friends and family. Check out
-            my projects below or click here to learn more about me.
+            I'm an ambitious, wholehearted, hard working person whether it comes
+            to development, training or my friends and family. Check out my
+            projects below or click here to learn more about me.
           </p>
         </Link>
 
