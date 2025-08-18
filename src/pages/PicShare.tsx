@@ -17,7 +17,7 @@ const PicShare = () => {
         fontWeight="bold"
         fontSize="2.5rem"
         website="pic share"
-        url="https://pic-share--pic-share-be97b.europe-west4.hosted.app/"
+        url="https://picsharesocial.se/"
         aboutText="
     -a social media app built with next and firebase
     -user can upload images, browse gallery, check personal feed, follow user, comment etc
