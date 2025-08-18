@@ -8,7 +8,7 @@
   margin-top: 10rem;
   gap: 2rem;
 
-  .ss-container {
+  .sund-container {
     width: 12rem;
     height: 17rem;
     border: 2px solid black;
@@ -20,16 +20,16 @@
     text-decoration: none;
     color: v.$black;
 
-    .ss {
-      font-family: "Poppins", serif;
-      font-weight: bold;
+    .sund {
+      font-family: "Satisfy", serif;
       font-size: 2rem;
     }
     img {
-      width: 10rem;
-      height: 10rem;
+      width: 7rem;
+      height: 9rem;
     }
   }
+
   .white-box-container {
     position: relative;
     .white-box {
@@ -42,7 +42,7 @@
       background: v.$white;
     }
   }
-  .sund-container {
+  .picshare-container {
     width: 12rem;
     height: 17rem;
     border: 2px solid black;
@@ -54,14 +54,15 @@
     text-decoration: none;
     color: v.$black;
 
-    .sund {
-      font-family: "Satisfy", serif;
+    .picshare {
+      font-family: "Arial", serif;
       font-size: 2rem;
+      font-weight: bold;
       margin: 0.7rem 0 0.7rem 0;
     }
     img {
-      width: 7rem;
-      height: 9rem;
+      width: 7.5rem;
+      height: 7.5rem;
     }
   }
   .white-box-2-container {
@@ -133,32 +134,71 @@
     }
   }
 
+  .white-box-4-container {
+    position: relative;
+    .white-box-4 {
+      position: absolute;
+      top: -150px;
+      left: -100px;
+      width: 12rem;
+      height: 17rem;
+      border: 2px solid black;
+      background: v.$white;
+    }
+  }
+
+  .ss-container {
+    width: 12rem;
+    height: 17rem;
+    border: 2px solid black;
+    background: v.$green;
+    @include m.flex(column);
+    margin-left: 5rem;
+    z-index: 3;
+    cursor: pointer;
+    text-decoration: none;
+    color: v.$black;
+
+    .ss {
+      font-family: "Poppins", serif;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
   @include m.desk {
-    .ss-container,
-    .training-container {
+    .terni-container,
+    .picshare-container {
       margin-left: 25rem;
       transition: 0.5s;
       box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
     }
-    .ss-container:hover,
-    .training-container:hover {
+    .terni-container:hover,
+    .picshare-container:hover {
       scale: 1.1;
       transition: 0.5s;
       box-shadow: 10px 10px 7px rgba(33, 33, 33, 0.7);
     }
     .sund-container,
-    .terni-container {
+    .ss-container,
+    .training-container {
       margin-right: 25rem;
       transition: 0.5s;
       box-shadow: -5px 5px 7px rgba(33, 33, 33, 0.7);
     }
     .sund-container:hover,
-    .terni-container:hover {
+    .training-container:hover,
+    .ss-container:hover {
       scale: 1.1;
       transition: 0.5s;
       box-shadow: -10px 10px 7px rgba(33, 33, 33, 0.7);
     }
-    .training-container {
+    .training-container,
+    .terni-container {
       margin-top: 8rem;
     }
 
@@ -183,6 +223,15 @@
     }
     .white-box-3-container {
       .white-box-3 {
+        transform: rotate(90deg);
+        top: -80px;
+        left: -150px;
+        width: 18rem;
+        height: 18rem;
+      }
+    }
+    .white-box-4-container {
+      .white-box-4 {
         transform: rotate(90deg);
         top: -80px;
         left: -150px;

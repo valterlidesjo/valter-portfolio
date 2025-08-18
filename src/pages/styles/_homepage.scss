@@ -165,7 +165,8 @@
     @include m.flex(column);
     max-width: 700px;
     .row-1,
-    .row-2 {
+    .row-2,
+    .row-3 {
       @include m.flex(row, space-evenly, center);
       width: 100%;
     }
@@ -185,7 +186,9 @@
     .icon-box .mongo-tooltip,
     .icon-box .express-tooltip,
     .icon-box .php-tooltip,
-    .icon-box .sql-tooltip {
+    .icon-box .sql-tooltip,
+    .icon-box .firebase-tooltip,
+    .icon-box .next-tooltip {
       display: none;
     }
     .icon-box:hover .react-tooltip,
@@ -197,7 +200,9 @@
     .icon-box:hover .mongo-tooltip,
     .icon-box:hover .express-tooltip,
     .icon-box:hover .php-tooltip,
-    .icon-box:hover .sql-tooltip {
+    .icon-box:hover .sql-tooltip,
+    .icon-box:hover .firebase-tooltip,
+    .icon-box:hover .next-tooltip {
       display: block;
       position: absolute;
       top: 95%;

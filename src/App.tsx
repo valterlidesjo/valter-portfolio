@@ -9,6 +9,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AboutMe from "./pages/AboutMe";
 import useScrollToTop from "./services/scrollToTop";
 import Terni from "./pages/Terni";
+import PicShare from "./pages/PicShare";
 
 function App() {
   return (
@@ -29,10 +30,8 @@ function App() {
                 path="/projects/trankantraining"
                 element={<TrankanTraining />}
               />
-              <Route
-                path="/projects/terni"
-                element={<Terni />}
-              />
+              <Route path="/projects/terni" element={<Terni />} />
+              <Route path="/projects/picshare" element={<PicShare />} />
             </Routes>
             <Footer />
           </ParallaxProvider>

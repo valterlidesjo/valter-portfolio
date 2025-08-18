@@ -1,6 +1,6 @@
 import "./styles/_homepage.scss";
-import valterImage from "../assets/image-valter-real.jpg";
-import valterImageW from "../assets/image-valter-real.webp";
+import valterImage2 from "../assets/bildvarberg.jpg";
+import valterImage2W from "../assets/bildvarberg.webp";
 import Projects from "../components/Projects";
 import { Link } from "react-router";
 import LanguageBox from "../components/LanguageBox";
@@ -29,9 +29,9 @@ const Homepage = () => {
       </div>
       <div className="boxes-container">
         <picture className="homepage-image-container">
-          <source srcSet={valterImageW} type="image/webp" />
+          <source srcSet={valterImage2W} type="image/webp" />
           <img
-            src={valterImage}
+            src={valterImage2}
             alt="Picture of me"
             loading="eager"
             decoding="async"

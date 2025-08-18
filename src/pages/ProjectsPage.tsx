@@ -2,6 +2,8 @@ import "./styles/_projectsPage.scss";
 import { Link } from "react-router";
 import ssBild from "../assets/svartssbild.png";
 import ssBildW from "../assets/svartssbild.webp";
+import picBild from "../assets/picshare.png";
+import picBildW from "../assets/picshare.webp";
 import sundBild from "../assets/sundbild.jpeg";
 import sundBildW from "../assets/sundbild.webp";
 import trainingBild from "../assets/trainingbild.jpg";
@@ -61,6 +63,25 @@ const ProjectsPage = () => {
             with three classmates.
             <br />
             <br />
+            started to learn next and firebase in preperation for my internship
+            at{" "}
+            <Link
+              to={"https://www.doneservices.se/"}
+              className="blue-p"
+              target="_blank"
+            >
+              done.
+            </Link>{" "}
+            made a social media app called{" "}
+            <Link to={"/projects/picshare"} className="blue-p">
+              pic share
+            </Link>{" "}
+            where users can upload images, browse a gallery, follow people,
+            comment and browse a personal feed. <br />
+            used many firebase techniques such as firestore, authentication,
+            storage, cloud functions, app hosting, exstensions - algolia <br />{" "}
+            <br />
+            <br />
             check out my projects down below, <br />
             love valter
           </p>
@@ -69,45 +90,41 @@ const ProjectsPage = () => {
           <Link to={"/projects/trankantraining"} className="projects-tt">
             <div className="training-top-text training">Trånkan</div>
             <picture>
-                <source srcSet={trainingBildW} type="image/webp" />
-                <img
-                src={trainingBild}
-                alt="Trånkan training image"
-                />
+              <source srcSet={trainingBildW} type="image/webp" />
+              <img src={trainingBild} alt="Trånkan training image" />
             </picture>
             <div className="training-bottom-text training">Training</div>
           </Link>
           <Link to={"/projects/sillystocks"} className="projects-ss">
             <div className="ss-top-text ss">SILLY</div>
             <picture>
-                <source srcSet={ssBildW} type="image/webp" />
-                <img
-                src={ssBild}
-                alt="Silly Stocks image"
-                />
+              <source srcSet={ssBildW} type="image/webp" />
+              <img src={ssBild} alt="Silly Stocks image" />
             </picture>
             <div className="ss-bottom-text ss">STOCKS</div>
           </Link>
           <Link to={"/projects/sundnergarden"} className="projects-sund">
             <div className="sund-top-text sund">Sund</div>
             <picture>
-                <source srcSet={sundBildW} type="image/webp" />
-                <img
-                src={sundBild}
-                alt="Sund Nergården image"
-                />
+              <source srcSet={sundBildW} type="image/webp" />
+              <img src={sundBild} alt="Sund Nergården image" />
             </picture>
             <div className="sund-bottom-text sund">Nergården</div>
           </Link>
           <Link to={"/projects/terni"} className="projects-terni">
             <div className="terni-top-text terni">Terni</div>
             <picture>
-                <source srcSet={terniBildW} type="image/webp" />
-                <img
-                src={terniBild}
-                alt="Terni restaurant image"
-                />
+              <source srcSet={terniBildW} type="image/webp" />
+              <img src={terniBild} alt="Terni restaurant image" />
             </picture>
+          </Link>
+          <Link to={"/projects/picshare"} className="projects-picshare">
+            <div className="picshare-top-text picshare">Pic</div>
+            <picture>
+              <source srcSet={picBildW} type="image/webp" />
+              <img src={picBild} alt="Picshare logo" />
+            </picture>
+            <div className="picshare-bottom-text picshare">Share</div>
           </Link>
         </div>
       </div>

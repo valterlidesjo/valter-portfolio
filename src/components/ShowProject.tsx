@@ -75,7 +75,7 @@ const ShowProject: React.FC<ShowProjectProps> = ({
           {website && url && (
             <div className="website">
               <p>-website</p>
-              <Link to={url} className="blue-p">
+              <Link to={url} className="blue-p" target="_blank">
                 {website}
               </Link>
             </div>

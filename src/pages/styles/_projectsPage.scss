@@ -99,12 +99,34 @@
         font-size: 2rem;
         margin: 0.7rem 0 0.7rem 0;
       }
-      .terni-bottom-text{
+      .terni-bottom-text {
         opacity: 0;
       }
       img {
         width: 10rem;
         height: 12rem;
+      }
+    }
+    .projects-picshare {
+      width: 12rem;
+      height: 17rem;
+      border: 2px solid black;
+      @include m.flex(column);
+      z-index: 3;
+      cursor: pointer;
+      margin: 2rem 0;
+      text-decoration: none;
+      color: v.$black;
+
+      .picshare {
+        font-family: "Arial", serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #1976d2;
+      }
+      img {
+        width: 10rem;
+        height: 10rem;
       }
     }
   }
@@ -119,18 +141,23 @@
         font-size: 1.2rem;
       }
     }
-    .projects{
-        width: 100%;
-        max-width: 1100px;
-        @include m.flex(row, space-evenly, center);
-        
-        .projects-ss, .projects-sund, .projects-tt, .projects-terni{
-            transition: 0.5s;
-            &:hover{
-                scale: 1.1;
-                transition: 0.5s;
-            }
+    .projects {
+      width: 80%;
+      max-width: 1100px;
+      @include m.flex(row, space-evenly, center);
+      flex-wrap: wrap;
+
+      .projects-ss,
+      .projects-sund,
+      .projects-tt,
+      .projects-terni,
+      .projects-picshare {
+        transition: 0.5s;
+        &:hover {
+          scale: 1.1;
+          transition: 0.5s;
         }
+      }
     }
   }
 }
