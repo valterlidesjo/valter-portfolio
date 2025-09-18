@@ -1,0 +1,96 @@
+@use "../../mainstyles/global" as g;
+@use "../../mainstyles/variabels" as v;
+@use "../../mainstyles/mixins" as m;
+
+.customer-container {
+  @include m.flex(column);
+  .customer-header {
+    font-family: "K2D", serif;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+  }
+  .vasteras-container {
+    @include m.flex(column, center, start);
+    width: 90%;
+    @include m.border(2px);
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+    .vasteras-text {
+      @include m.flex(column, center, start);
+      width: 100%;
+      .vasteras-header {
+        font-family: "Playfair Display", serif;
+        font-size: 1.2rem;
+        padding-bottom: 8px;
+      }
+      .vasteras-breadtext {
+        font-family: "Playfair Display", serif;
+        font-size: 0.8rem;
+        line-height: 1.3;
+      }
+    }
+    .vasteras-image-super-container {
+      @include m.flex(row, space-between, center);
+      gap: 1rem;
+      width: 100%;
+      height: 100%;
+      padding-top: 1rem;
+      .vasteras-image-container {
+        width: 120px;
+        height: 90px;
+        img {
+          width: 120px;
+          height: 90px;
+        }
+      }
+      .final-product-container {
+        @include m.flex(column);
+        gap: 0.5rem;
+        .final-product-text {
+          font-family: "Playfair Display", serif;
+
+          font-size: 0.8rem;
+          text-align: center;
+        }
+        .final-product-button {
+          font-family: "Playfair Display", serif;
+
+          font-size: 0.8rem;
+        }
+      }
+    }
+    @include m.desk {
+      max-width: 600px;
+      @include m.flex(row, space-between, center);
+      .vasteras-text {
+        width: 55%;
+        .vasteras-header {
+          font-size: 1.6rem;
+        }
+        .vasteras-breadtext {
+          font-size: 1rem;
+        }
+      }
+      .vasteras-image-super-container {
+        @include m.flex(column);
+        width: 45%;
+        .vasteras-image-container {
+          width: 90%;
+          height: auto;
+          img {
+            width: 90%;
+            height: auto;
+          }
+        }
+        .final-product-container {
+          .final-product-text,
+          .final-product-button {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

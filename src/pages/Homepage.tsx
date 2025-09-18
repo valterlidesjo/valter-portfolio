@@ -4,6 +4,7 @@ import valterImage2W from "../assets/bildvarberg.webp";
 import Projects from "../components/Projects";
 import { Link } from "react-router";
 import LanguageBox from "../components/LanguageBox";
+import CustomerCases from "../components/CustomerCases";
 
 const Homepage = () => {
   return (
@@ -44,6 +45,7 @@ const Homepage = () => {
         <div className="homepage-yellow"></div>
       </div>
       <div className="homepage-container">
+        <CustomerCases />
         <LanguageBox />
 
         <Link to={"/about-me"} className="me-info-container">
